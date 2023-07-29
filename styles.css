@@ -1,20 +1,24 @@
 body{
     padding: 0%;
     background-image: url('./asest/Fondo2.jpg');
+    box-sizing: border-box;
 }
 h3{
     font-size: x-large;
     color: blueviolet;
 }
-ul li{
-    list-style: none;
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
     text-align: center;
     border: solid 2px #49117e;
     border-radius: 15px;
-    margin: 32px 0 31px 0;
-    padding: 15px 25px 48px 25px;
+    margin: 50px 16px 60px 16px;
+    padding: 36px 25px 145px 25px;
+}
+header .title{
+    margin-bottom: 45px;
 }
 header h1{
     color:#49117e;
@@ -23,6 +27,11 @@ header h1{
 header h2{
     color:#49117e;
     font-size: xx-large;
+    padding-bottom: 45px;
+}
+header img{
+    border: solid 2px #49117e;
+    border-radius: 15px;
 }
 
 nav{
@@ -30,27 +39,164 @@ nav{
     justify-content: space-around;
 }
 nav ul li button{
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     border: solid 3px #49117e;
     border-radius: 15px;
-}
-
-nav ul li {
-    font-size: large;
 }
 
 nav ul li a{
     text-decoration: none;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: large;   
-    margin: 10px;
+    margin: 25px;
 }
 
 nav ul li {
     list-style: none;
-    font-size: large;
 }
 
-button #inicio{
-    align-items:end;
+main .infoInicial{
+    margin-bottom: 85px
+}
+
+.datosInterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: top;
+    margin-top: 115px;
+    padding-top: 60px;
+}
+.datosInterContainer h3{
+    text-align: center;
+    font-size: xx-large;
+}
+.datosInterContainer li{
+    color: #49117e;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.datosInterContainer #datosPersonales ul{
+    margin-top: 90px;
+}
+.datosInterContainer #intereses ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+
+.datosInterContainer #intereses ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.datosInterContainer #intereses ul img{
+    width: 89px;
+    height: 55px;
+    margin-right: 38px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+body .volver{
+    display: flex;
+    justify-content: center;
+}
+body .volver button{
+    margin-bottom: 10px;
+    border: solid 3px #49117e;
+    border-radius: 15px;
+}
+body .volver button a{
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;   
+    margin: 25px;
+}
+#antecedentesAcademicos .volver,
+#capacitacionRecibida .volver,
+#experienciaLaboral .volver {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#infoGeneral ul li{
+    list-style: none;
+    color: #49117e;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+#infoGeneral h3{
+    text-align: center;
+    font-size: xx-large;
+}
+#infoGeneral .infoGen-container{
+    display: flex;
+    justify-content: space-around;
+}
+#infoGeneral h4{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#infoGeneral .p0 {
+    font-weight: bold;
+    color:#49117e;
+}
+#infoGeneral .p1 {
+    text-indent: 4em;
+}
+#infoGeneral img {
+    width: 25%;
+    height: auto;
+}
+#capacitacionRecibida{
+    margin-top: 30px;
+}
+
+
+
+@media screen and (min-width:930px){
+  
+    header img{
+        width: 150%;
+        height: auto;
+    }
+    nav ul li button{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    
+    nav ul li a{
+        font-size: x-large;   
+        margin: 25px;
+    }
+}
+
+@media screen and (max-width:580px){
+  
+    header img{
+        width: 70%;
+        height: auto;
+    }
+    nav{
+        display: block;
+        
+    }
+    nav ul li button{
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    
+    nav ul li a{
+        font-size: small;   
+        margin: 10px;
+    }
 }
