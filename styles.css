@@ -1,0 +1,56 @@
+body{
+    padding: 0%;
+    background-image: url('./asest/Fondo2.jpg');
+}
+h3{
+    font-size: x-large;
+    color: blueviolet;
+}
+ul li{
+    list-style: none;
+}
+header{
+    text-align: center;
+    border: solid 2px #49117e;
+    border-radius: 15px;
+    margin: 32px 0 31px 0;
+    padding: 15px 25px 48px 25px;
+}
+header h1{
+    color:#49117e;
+    font-size: xxx-large;
+}
+header h2{
+    color:#49117e;
+    font-size: xx-large;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li button{
+    margin-bottom: 6px;
+    border: solid 3px #49117e;
+    border-radius: 15px;
+}
+
+nav ul li {
+    font-size: large;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;   
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: large;
+}
+
+button #inicio{
+    align-items:end;
+}
