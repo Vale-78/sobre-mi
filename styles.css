@@ -7,9 +7,14 @@ h3{
     font-size: x-large;
     color: blueviolet;
 }
-p{
+p, h3, h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+#inicio{
+    margin-bottom: 85px;
+    min-height: 100%;
+}
+/* seccion header /inicio */
 header{
     text-align: center;
     border: solid 2px #49117e;
@@ -54,9 +59,10 @@ nav ul li a{
 nav ul li {
     list-style: none;
 }
-
+/* main / div / info inicial */
 main .infoInicial{
-    margin-bottom: 85px
+    margin-bottom: 120px;
+    min-height: 100%;
 }
 
 .datosInterContainer{
@@ -100,6 +106,8 @@ main .infoInicial{
     margin-bottom: 5px;
     border-radius: 50%;
 }
+
+/* button volver y volver a infoGeneral */
 body .volver{
     display: flex;
     justify-content: center;
@@ -117,14 +125,15 @@ body .volver button a{
 }
 #antecedentesAcademicos .volver,
 #capacitacionRecibida .volver,
-#experienciaLaboral .volver {
+#experienciaLaboral .volver,
+#antecPersonales .volver{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
 
-
+/* main / sección INFO General */
 #infoGeneral ul li{
     list-style: none;
     color: #49117e;
@@ -141,27 +150,94 @@ body .volver button a{
     display: flex;
     justify-content: space-around;
 }
+
+
 #infoGeneral h4{
     font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 #infoGeneral .p0 {
     font-weight: bold;
     color:#49117e;
+    margin-left: 15px;
 }
 #infoGeneral .p1 {
     text-indent: 4em;
+    margin-left: 15px;
 }
 #infoGeneral img {
     width: 25%;
     height: auto;
 }
+#infoGeneral .p2 {
+    margin-left: 55px;
+}
+
+/* main / sección INFO General/ Article: Experiencia laboral */
+#experienciaLaboral{
+    min-height: 100%;
+    padding-top: 3%;
+}
+#experienciaLaboral .experLab-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#experienciaLaboral .experLab-container img{
+    width: 110%;
+    height: auto;
+}
+/* main / sección INFO General/ article: Capacitación recibida */
 #capacitacionRecibida{
     margin-top: 30px;
 }
+/* main / article: Contacto */
+#contacto{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
 
-
+#contacto ul li{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contacto .contacto-container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100%;
+}
+#contacto img{
+    width: 20%;
+    height: auto;
+}
+/* main/ aside */
+aside{
+   
+    border: solid 2px #49117e;
+    border-radius: 15px;
+    margin: 50px 16px 60px 16px;
+    padding: 36px 25px 145px 25px;
+}
+aside h3{
+    text-align: center;
+    font-size: xx-large;
+}
+aside .container-faceboock img{
+    border-radius: 100%;
+    float: left;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+}
+aside .container-doc img{
+    float: left;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+}
 
 @media screen and (min-width:930px){
   
@@ -179,6 +255,7 @@ body .volver button a{
         margin: 25px;
     }
 }
+
 
 @media screen and (max-width:580px){
   
