@@ -10,7 +10,7 @@
   --text-color: #403a3a;
   --text-color-light: #707070;
   --container-color: #fafafa;
-  --container-color-alt: #f0efef;
+  --container-color-alt: #f3e78a;
   --body-color: #fcfcfc;
 
   /* Font and typography */
@@ -248,6 +248,7 @@ img {
   letter-spacing: 0.35rem;
   text-align: center;
   margin-bottom: var(--mb-3);
+  background-color: #8bc34a7d;
 }
 
 /* LAYOUT */
@@ -612,7 +613,11 @@ img {
     display: inline-block;
   }
 
-  .section-title,
+  .section-title{
+    text-align: initial;
+    gap: 0;
+    background-color: #8bc34a7d;
+  }
   .profile_description{
     text-align: initial;
     gap: 0;
